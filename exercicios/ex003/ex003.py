@@ -1,3 +1,6 @@
+from rich import print
+from rich import inspect
+
 class ContaBancaria:
     """
 Cria uma conta bancária e permite fazer saques e depósitos    
@@ -25,7 +28,5 @@ Cria uma conta bancária e permite fazer saques e depósitos
 
 
 c1 = ContaBancaria(112, "Ricardo", 3000)
-c1.depositar(500)
-c1.sacar(2_000_000)
-print(c1)
+inspect(c1)
         
